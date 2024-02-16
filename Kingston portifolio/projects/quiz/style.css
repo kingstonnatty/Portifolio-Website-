@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body onload="">
+    <form  name="frm" action="" onsubmit="return demo()">
+    <label for="">Username: </label><input type="text" minlength="4" maxlength="32" name="num2" id="num1" onkeyup="ss()"> <span id="res"></span>
+    <label for="password: ">password: </label><input type="password" minlength="4" maxlength="12" name="num2" id="num2" >
+    <label for="">email: </label> <input type="email" name="" id="">
+
+    <input type="text" name="num2" id="x" >
+
+
+    <select id="sel">
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+   
+    </select>    <input type="text" name="num2" id="y" >
+<button onclick="calc()">=</button> <label for="" id="ans"></label>
+   <img id="1" src="" alt="">
+    <div  id="res"></div>
+
+    <label id="clk">click me</label>
+   <input type="submit" >
+
+</form> 
+<dir id="sdsd">
+    <div><h1>dsw</h1>
+        <div>
+            <h1>asdsa</h1>
+        </div>
+    </div>
+</dir>
+
+    <script >// rec();
+    function calc(x,y){
+      
+ var x= document.getElementById("x").value;
+ var y=document.getElementById("y").value;
+ var opt=1;//=documet.getElementById("sel").value;
+ switch(opt){
+    case 1:{
+        document.getElementById("ans").innerHTML=(x+y);
+        break;
+    }
+ }
+    }
+     function ss(){
+        var nlgt=document.getElementById("num1").value.length;
+        if(nlgt<4||nlgt>8) document.getElementById("res").innerHTML= nlgt+ " not good";
+     }
+     function valid(){
+        var nlgt=document.getElementById("num1").value.length;
+        if(nlgt<4||nlgt>8) alert("not allowed"); 
+     }
+     function rec(){
+        setTimeout(demo, 300);
+      }    
+
+
+        function demo(){
+
+alert("hello");
+
+// return false;
+        }
+
+//         function check(){
+
+// var x=document.getElementById("num1").value;
+// var y=document.frm.num2.value;
+// if(y==NULL) y=prompt("input the number");
+// //if(x==0) 
+// alert(y);
+// if(y%2==0) document.getElementById("res").innerHTML="ITS EVEN";
+// else document.getElementById("res").innerHTML="odd";
+
+        // }
+
+
+        function check(){
+           
+            var list=document.getElementsByTagName("input");
+            var y=document.getElementsByTagName("img");
+            alert(list.length + y.length);
+            document.getElementById("res").innerHTML=(list.length + y.length)
+             +" forms"; 
+            //  document.getElementById("1").src="rr.JPG";
+        /*    var x= document.frm.num2.value.length;
+            if(x<5){
+                document.frm.hh.innerHTML=x+" not good";
+                // document.getElementById("res").innerHTML=x+" Not Good.";
+
+            }
+            else{
+                document.getElementById("res").innerHTML=x+" Good.";
+            }*/
+
+        }
+    </script>
+</body>
+</html>

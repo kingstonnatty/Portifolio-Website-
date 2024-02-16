@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="form-container">
+        <form action="index.html" id="reg-form" onsubmit="return validateInputs()">
+            
+            <div class="input-control">
+              
+              <input type="text" id="username" name="username" placeholder="Username">
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+        
+              <input type="text" id="email" name="email" placeholder="Email">
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+          
+              <input type="password" id="password" name="password" placeholder="Password">
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+      
+              <input type="password" id="password2" name="password2" placeholder="Confirm Password">
+              <div class="error"></div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register" id="register">
+              <input onclick="location.reload()" type="reset" value="Clear">
+            </div>
+          </form>
+    </div>
+
+
+
+</body>
+</html>
